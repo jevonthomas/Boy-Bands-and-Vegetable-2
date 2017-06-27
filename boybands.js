@@ -21,16 +21,16 @@ var veggieElement = document.getElementById("vegetables");
 for (var i = 0; i < bandLoopCount; i++) {
 
   // Add the band names into the correct <div>
-  currentBand += bands[i] + " ";
+  currentBand = bands[i];
 
-  bandElement.innerHTML = currentBand;
+  bandElement.innerHTML += `<p>${currentBand}</p>`;
 
 }
 
 for (var i = 0; i < veggieLoopCount; i++) {
   // Add the veggie names into the correct <div>
-  currentVeggie += vegetables[i] + " ";
+  currentVeggie = vegetables[i];
 
-  veggieElement.innerHTML = currentVeggie;
+  veggieElement.innerHTML += `<p>${currentVeggie}</p>`;
 
 }
